@@ -1,5 +1,6 @@
 body {
   font-family: "Lato-Regular", sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -25,9 +26,21 @@ a {
   transition: all 0.2s ease-in;
 }
 
+p {
+  font-family: "Lato-Light", sans-serif;
+  letter-spacing: 1px;
+}
+
 /* Generic Helpers */
 .font-regular {
   font-family: "Lato-Regular", sans-serif;
+}
+.font-light {
+  font-family: "Lato-Light", sans-serif;
+}
+.body-light-text {
+  font-family: "Lato-Light", sans-serif;
+  letter-spacing: 1px;
 }
 
 /* Navbar main menu */
