@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Franklin Gothic Extra Condensed";
+  src: local("Franklin Gothic Extra Condensed"),
+    url("./fonts/Franklin-Gothic-Extra-Condensed.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ITC Franklin Gothic Lt Book";
+  src: local("ITC Franklin Gothic Lt Book"),
+    url("./fonts/itc-franklin-gothic-lt-book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: local("Lato-Black"), url("./fonts/Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: local("Lato-Bold"), url("./fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: local("Lato-Light"), url("./fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: local("Lato-Regular"), url("./fonts/Lato-Regular.ttf") format("truetype");
+}
+
+/* @font-face {
+  font-family: "Oswald ExtraLight";
+  src: local("Oswald ExtraLight"),
+    url("./fonts/Oswald-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald Light";
+  src: local("Oswald Light"), url("./fonts/Oswald-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald Medium";
+  src: local("Oswald Medium"),
+    url("./fonts/Oswald-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald Regular";
+  src: local("Oswald Regular"),
+    url("./fonts/Oswald-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald Bold";
+  src: local("Oswald Bold"), url("./fonts/Oswald-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald SemiBold";
+  src: local("Oswald SemiBold"),
+    url("./fonts/Oswald-SemiBold.ttf") format("truetype");
+} */

@@ -1,0 +1,99 @@
+body {
+  font-family: "Lato-Regular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato-Black", sans-serif;
+  text-transform: uppercase;
+}
+h2 {
+  letter-spacing: 0.25rem;
+}
+
+input {
+  border-radius: 2px !important;
+}
+
+a {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* Navbar main menu */
+.navbar .nav > li > a {
+  font-family: "Lato-Regular", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+/* Navbar search button w/ magnifying glass */
+.rls-search-button-icon {
+  font-size: 2rem !important;
+}
+
+/* Featured content on homepage - item titles */
+.rls-featured-content-item-title {
+  font-family: "Lato-Regular", sans-serif;
+}
+
+/* Footer */
+.rls-footer-nav-items {
+  font-family: "Lato-Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.rls-footer-nav-items a {
+  font-size: 1.5rem;
+}
+.rls-copy {
+  color: #999;
+  letter-spacing: 1px;
+}
+.rls-social-wrap {
+  /* copied from '.social-wrap' class */
+  margin: 5px 15px;
+  width: 235px;
+  float: right;
+}
+.rls-social-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.rls-social-list > li > a {
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #999;
+}
+.rls-social-list > li > a:hover {
+  color: #4da30c;
+}
+
+/*********************************************
+* Bootstrap overrides 
+*********************************************/
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  border-radius: 0;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.modal-content {
+  border-radius: 0;
+}
+
+.navbar-toggle {
+  border: 0;
+  border-radius: 0;
+}
