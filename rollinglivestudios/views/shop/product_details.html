@@ -2,7 +2,7 @@
 <div class="c-layout-page">
     <div class="c-content-box c-size-sm c-overflow-hide c-bg-white">
         <div class="container">
-         <h2 class="c-font-bold c-margin-t-20">{$this->Language['product_details']}</h2>
+         <h2 class="c-font-bold c-margin-t-20 rls-product-details-headline">{$this->Language['product_details']}</h2>
             <div class="c-shop-product-details-2 top20">
                 <div class="row">
                     <div class="col-md-3 col-sm-4">
@@ -12,7 +12,7 @@
                                     {assign var="cropDimesion" value=Yii::app()->common->getPgDimension()}
                                     {assign var="img_path" value=PGProduct::getpgImage($product['id'],'original')}
                                     {if $img_path!=''}
-                                    <img src="{$img_path}" alt="{$product['name']}">
+                                    <img src="{$img_path}" class="hvr-grow" alt="{$product['name']}">
                                     {else}
                                     <img data-src="holder.js/{$cropDimesion['width']}x{$cropDimesion['height']}" alt="{$cropDimesion['width']}x{$cropDimesion['height']}" style="width: 100%;" />
                                     {/if}
@@ -24,7 +24,7 @@
                     <div class="col-md-7 col-sm-6">
                         <div class="c-product-meta">
                             <div class="c-content-title-1" style="float: none;">
-                                <h3 class="c-font-uppercase c-font-bold" style="word-wrap: break-word;">                                    
+                                <h3 class="c-font-uppercase c-font-bold font-regular" style="word-wrap: break-word;">                                    
                                     {$product['name']}{if $product['is_preorder'] == 1}&nbsp;<span class="label label-danger">{$this->Language['coming_soon']} &nbsp;</span>{/if}
                                 </h3>
                                 <div class="c-line-left"></div>

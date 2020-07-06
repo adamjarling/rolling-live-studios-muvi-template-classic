@@ -49,6 +49,9 @@ a {
 }
 
 /* Footer */
+.rls-border-top {
+  padding-top: 20px;
+}
 .rls-footer-nav-items {
   font-family: "Lato-Black", sans-serif;
   text-transform: uppercase;
@@ -85,6 +88,12 @@ a {
 .cart:hover {
   background: #fff !important;
   color: #000 !important;
+}
+
+/* Product / Merch styles */
+.rls-product-details-headline {
+  font-family: "Lato-Light", sans-serif;
+  margin-bottom: 5rem;
 }
 
 /*********************************************
