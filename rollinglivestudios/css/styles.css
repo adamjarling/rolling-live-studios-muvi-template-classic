@@ -44,6 +44,7 @@ a:focus {
 .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: transparent !important;
 }
+
 .navbar .nav > li > a {
   font-size: 16pt;
   font-weight: bold;
@@ -52,7 +53,6 @@ a:focus {
   font-size: 16pt;
 }
 .navbar-brand {
-  /*float: none;*/
   float: left;
   margin-top: -10px;
   font-size: 18px;
@@ -308,23 +308,24 @@ h3.moviename {
   font-size: 12pt;
 }
 
-.footer-logo {
+/* .footer-logo {
   max-width: 200px;
   float: left;
   min-width: 170px;
-}
+} 
 .copyright {
   max-width: 600px;
   float: left;
 }
+*/
 .footer-poweredby {
   float: right;
   max-width: 200px;
 }
 
-.copy {
+/* .copy {
   margin-left: 10px;
-}
+} 
 footer .copyright a {
   margin-left: 10px;
 }
@@ -338,6 +339,7 @@ footer a {
 footer a:hover {
   text-decoration: none;
 }
+*/
 .divider2 {
   height: 10px;
   width: 100%;
