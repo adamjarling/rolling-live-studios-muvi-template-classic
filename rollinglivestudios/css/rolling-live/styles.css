@@ -71,6 +71,24 @@ p {
   font-size: 2rem !important;
 }
 
+/* Home Banners */
+.rls-banner-text-large {
+  background: #000;
+  padding: 0 1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 3px !important;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 4rem !important;
+}
+.rls-banner-text-small {
+  background: #000;
+  padding: 0 1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 3px !important;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 2rem !important;
+}
+
 /* Featured content on homepage - item titles */
 .rls-featured-content-item-title {
   font-family: "Lato-Regular", sans-serif;

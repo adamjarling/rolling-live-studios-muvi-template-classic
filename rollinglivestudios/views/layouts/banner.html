@@ -56,9 +56,9 @@
 						<!-- Slide Text Layer -->
 						<div class="slide-text  {if $properties->is_advance == 1}slide_advance{/if}">
 							{if $properties->is_advance == 0}
-							{if $properties->banner_text_heading !='' }<div class="bnr-text-large">{$properties->banner_text_heading}</div>{/if}
+							{if $properties->banner_text_heading !='' }<div class="bnr-text-large rls-banner-text-large">{$properties->banner_text_heading}</div>{/if}
 
-							{if $properties->banner_text_description !='' }<br><div class="bnr-text-small">{$properties->banner_text_description}</div>{/if}
+							{if $properties->banner_text_description !='' }<br><div class="bnr-text-small rls-banner-text-small">{$properties->banner_text_description}</div>{/if}
 
 							{$user_id=Yii::app()->user->id}
 
