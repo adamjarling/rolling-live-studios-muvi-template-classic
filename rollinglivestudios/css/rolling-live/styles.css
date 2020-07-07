@@ -75,8 +75,18 @@ p {
 .rls-featured-content-item-title {
   font-family: "Lato-Regular", sans-serif;
 }
+@media (max-width: 480px) {
+  .rls-featured-section-title {
+    font-size: 2.5rem;
+  }
+}
 
 /* Footer */
+footer {
+  margin: 40px 0 0;
+  overflow: hidden;
+  background: #222;
+}
 .rls-footer {
   padding-top: 20px;
   display: flex;
@@ -99,6 +109,7 @@ p {
 }
 .rls-footer-nav-items a {
   font-size: 1.5rem;
+  padding: 0 1rem;
 }
 .rls-copy {
   color: #999;
@@ -126,10 +137,14 @@ p {
   color: #000 !important;
 }
 
+.rls-cart-content-box {
+  margin-top: 2rem;
+}
+
 /* Product / Merch styles */
 .rls-product-details-headline {
   font-family: "Lato-Light", sans-serif;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 /*********************************************

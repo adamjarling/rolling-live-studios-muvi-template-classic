@@ -999,10 +999,10 @@ h4 {
   }
 }
 
-footer {
+/* footer {
   margin: 40px 0px;
   overflow: hidden;
-}
+} */
 .navbar-wrapper.home2 {
   position: relative;
 }
@@ -1474,10 +1474,10 @@ a.social-icon {
   display: none;
   background: url("../images/loading.gif") no-repeat center;
 }
-.border-top {
+/* .border-top {
   border-top: 1px solid #ddd;
   padding: 10px;
-}
+} */
 
 .popover {
   max-width: 400px;
