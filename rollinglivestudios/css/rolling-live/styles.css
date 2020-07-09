@@ -1,3 +1,10 @@
+/**
+Primary color options: 
+#2DBD9D (hulu green/blue)
+#ec027f We Are Hear pink
+#adabb0 KISS silver
+*/
+
 body {
   font-family: "Lato-Regular", sans-serif;
   font-size: 16px;
@@ -88,10 +95,19 @@ p {
   font-family: "Lato-Light", sans-serif;
   font-size: 2rem !important;
 }
+@media (max-width: 480px) {
+  .rls-banner-text-large {
+    font-size: 2rem !important;
+  }
+  .rls-banner-text-small {
+    font-size: 1rem !important;
+  }
+}
 
 /* Featured content on homepage - item titles */
 .rls-featured-content-item-title {
   font-family: "Lato-Regular", sans-serif;
+  text-align: center;
 }
 @media (max-width: 480px) {
   .rls-featured-section-title {
@@ -103,7 +119,6 @@ p {
 footer {
   margin: 40px 0 0;
   overflow: hidden;
-  background: #222;
 }
 .rls-footer {
   padding-top: 20px;
@@ -111,6 +126,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid #ccc;
 }
 .footer-logo {
   max-width: 100px;
