@@ -1,13 +1,22 @@
 /**
 Primary color options: 
 #2DBD9D (hulu green/blue)
+#d9d9d6 KISS silver
+
+Secondary color:
 #ec027f We Are Hear pink
-#adabb0 KISS silver
 */
+
+/* Declare variables here */
+:root {
+  --primary-color: #2dbd9d;
+  --secondary-color: #d9d9d6;
+}
 
 body {
   font-family: "Lato-Regular", sans-serif;
   font-size: 16px;
+  color: var(--secondary-color);
 }
 body:after {
   content: "";
@@ -32,6 +41,7 @@ h4,
 h5 {
   font-family: "Lato-Black", sans-serif;
   text-transform: uppercase;
+  color: white;
 }
 h2 {
   letter-spacing: 0.25rem;
@@ -46,11 +56,29 @@ a {
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--primary-color);
+  opacity: 0.75;
 }
 
 p {
   font-family: "Lato-Light", sans-serif;
   letter-spacing: 1px;
+}
+
+label {
+  color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 0;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  opacity: 0.75;
 }
 
 /* Generic Helpers */
@@ -66,11 +94,15 @@ p {
 }
 
 /* Navbar main menu */
+.broder-bottom {
+  border-bottom: 2px solid var(--primary-color);
+}
 .navbar .nav > li > a {
   font-family: "Lato-Regular", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.5rem;
+  color: var(--secondary-color);
 }
 
 /* Navbar search button w/ magnifying glass */
@@ -103,15 +135,48 @@ p {
     font-size: 1rem !important;
   }
 }
+.slide-text > a:hover,
+.slide-text > a:active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
 
 /* Featured content on homepage - item titles */
+.rls-featured-section-content-item-wrapper {
+  margin-bottom: 4rem;
+}
+/* TODO: Remove this once new images in place */
+.rls-featured-content-image {
+  width: 100%;
+}
 .rls-featured-content-item-title {
   font-family: "Lato-Regular", sans-serif;
   text-align: center;
+  font-size: 1.5rem !important;
 }
+.rls-featured-content-item-title > a {
+  color: var(--secondary-color);
+}
+.rls-featured-section-title {
+  padding: 2rem 0 1rem;
+}
+.thumbnail {
+  border: 0;
+}
+h3.moviename {
+  font-size: 1.5rem;
+}
+h3.moviename a {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 480px) {
   .rls-featured-section-title {
     font-size: 2.5rem;
+    text-align: center;
+    font-family: "Lato-Regular", sans-serif;
   }
 }
 
@@ -144,6 +209,13 @@ footer {
 .rls-footer-nav-items a {
   font-size: 1.5rem;
   padding: 0 1rem;
+  color: var(--secondary-color);
+}
+@media (max-width: 480px) {
+  .rls-footer-nav-items a {
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+  }
 }
 .rls-copy {
   color: #999;
@@ -159,10 +231,6 @@ footer {
 .rls-social-list > li > a {
   font-size: 3rem;
   margin: 0 1rem;
-  color: #999;
-}
-.rls-social-list > li > a:hover {
-  color: #4da30c;
 }
 
 /* Cart Stuff */
@@ -173,6 +241,12 @@ footer {
 
 .rls-cart-content-box {
   margin-top: 2rem;
+}
+
+.order-now:hover {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: #333;
 }
 
 /* Product / Merch styles */
@@ -214,20 +288,6 @@ footer {
 /*********************************************
 * Hover.css individual styles 
 *********************************************/
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-  transform: scale(1.1);
+.hvr-overline-reveal:before {
+  background: var(--primary-color);
 }

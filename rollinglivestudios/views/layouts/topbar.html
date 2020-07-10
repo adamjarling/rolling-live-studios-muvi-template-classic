@@ -21,7 +21,7 @@
                 
                <ul class="nav navbar-nav navbar-left">
                     {foreach from=$this->mainmenu item=menu}
-                    <li {if $menu['children']|@count > 0}class="dropdown"{/if}><a href="{$menu.permalink}" {if $menu.link_type == '2'}target="_blank" {/if} >{$menu.title} {if $menu['children']|@count > 0}<span class="caret"></span>{/if}</a>
+                    <li {if $menu['children']|@count > 0}class="dropdown"{/if}><a href="{$menu.permalink}" class="hvr-overline-reveal" {if $menu.link_type == '2'}target="_blank" {/if} >{$menu.title} {if $menu['children']|@count > 0}<span class="caret"></span>{/if}</a>
                         {if $menu.children|@count > 0}
                         <ul class="dropdown-menu">
                             {foreach from=$menu.children item=childMenu}
@@ -73,7 +73,7 @@
                     </li>
                     {if Yii::app()->general->getStoreLink()}
                     <li class="cart_icon_parent">
-                        <a href="{$this->base_url}/shop/cart" class="hvr-grow">
+                        <a href="{$this->base_url}/shop/cart" class="hvr-overline-reveal">
                             <div id="round-cart">{if $smarty.session.totalqnt}{$smarty.session.totalqnt}{else}0{/if}</div>
                             <img src="{$this->siteurl}/images/icon-cart.png">
                         </a>
@@ -82,7 +82,7 @@
                     <!--0016219: User Notification feature (For all Template) R1 start-->
                 {if $this->user_id}
                 <li class="c-cart-toggler-wrapper">
-                    <a class="c-btn-icon c-cart-toggler usernotification_bell hvr-grow">
+                    <a class="c-btn-icon c-cart-toggler usernotification_bell hvr-overline-reveal">
                         <i class="fa fa-bell-o"></i>
                         <span class="count_new_notification">
                             <span class="round-cart">

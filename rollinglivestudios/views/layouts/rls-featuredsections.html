@@ -41,11 +41,14 @@
     </div>
     <div class="row">
       <div ng-repeat="content in section.contents" class="">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="rls-featured-section-content-item-wrapper">
-            <div class="thumbnail listpos">
+            <div class="listpos">
               <a href="{{content.permalink}}">
-                <img class="img-tshow hvr-grow" src="{{content.poster}}" />
+                <img
+                  class="img-tshow hvr-grow img-responsive rls-featured-content-image"
+                  src="{{content.poster}}"
+                />
               </a>
             </div>
             <h3
